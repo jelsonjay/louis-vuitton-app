@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+:root {
+	--primary: #95725a;
+	--clr-light: #ddd;
+	--clr-white: #fff;
+	--clr-black: #000;
+	--clr-robins-egg-blue: #2fdae5;
+	--clr-purple: #d22ae0;
+	--clr-bg: #d6cece;
+	--clr-green: #18a337;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	width: 100vw;
+	color: var(--clr-white);
+	background: var(--clr-bg);
+}
+
+a {
+	text-decoration: none;
+}
+li {
+	list-style: none;
+}
+
+/*==========navbar=========*/
+.navbar {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	background-color: var(--clr-bg);
+	padding: 0.8rem 0;
+}
+.navbar a {
+	color: var(--clr-black);
+}
+.logo {
+	margin-left: 2.9rem;
+	cursor: pointer;
+}
+.navbar img {
+	width: 2rem;
+	overflow: hidden;
+}
+.navbar .nav-link {
+	display: flex;
+	margin-right: 5.9rem;
+	gap: 4rem;
+}
+.navbar .nav-link li a:hover {
+	padding: 0.5rem;
+	background: var(--clr-white);
+	transition: 0.3s;
+	color: var(--clr-black);
+	border-radius: 0.5rem;
+}
+#toggle,
+.navbar label {
+	display: none;
+}
+.bx-menu {
+	font-size: 2rem;
+	color: var(--clr-black);
+}
+
+/*================hero===============*/
+.hero {
+	width: 100%;
+	height: 100vh;
+	background: var(--clr-bg);
+	display: flex;
+}
+.hero-container {
+	width: 95%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: relative;
+	background-color: var(--clr-bg);
+}
+.hero-img-text {
+	width: 1250px;
+	z-index: 1;
+	position: absolute;
+}
+
+.hero-img {
+	width: 800px;
+	z-index: 2;
+	position: absolute;
+}
+
+/*-------------social-icons-----------------*/
+.social-icons {
+	width: 5%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	color: var(--clr-black);
+	margin-top: 4rem;
+}
+
+.social-icons a {
+	text-transform: uppercase;
+	text-orientation: mixed;
+	writing-mode: vertical-lr;
+	color: var(--clr-black);
+	font-size: 0.8rem;
+}
+.social-icons span {
+	margin: 1rem 1rem;
+}
+/*==================product===================*/
+.product {
+	padding: 0.9rem 0;
+	width: 100vw;
+	overflow: hidden;
+	background-color: var(--clr-bg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 4rem;
+}
+/*------------product-left-------------*/
+.product-left {
+	width: 21.875rem;
+	height: 7.375rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	border-radius: 0.8rem;
+	box-shadow: 0.4rem 0.4rem 0.4rem 0.4rem rgb(194, 188, 189);
+	cursor: pointer;
+	transition: 0.5s;
+	overflow-y: hidden;
+	color: var(--clr-black);
+}
+.product-left img {
+	width: 6.25rem;
+}
+.product-left div {
+	width: 0.2rem;
+	background: rgb(216, 211, 211);
+	height: 6.5rem;
+}
+.product-left:hover {
+	background-color: #95725a;
+	color: var(--clr-white);
+}
+/*------------product-left-------------*/
+.product-right {
+	width: 21.875rem;
+	height: 7.375rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	border-radius: 0.8rem;
+	box-shadow: 0.4rem 0.4rem 0.4rem 0.4rem rgb(194, 188, 189);
+	cursor: pointer;
+	transition: 0.5s;
+	overflow-y: hidden;
+	color: var(--clr-black);
+}
+.product-right img {
+	width: 6.25rem;
+}
+.product-right div {
+	width: 0.2rem;
+	background: #ddd;
+	height: 6.5rem;
+}
+.product-right:hover {
+	background-color: rgb(37, 36, 36);
+	color: var(--clr-white);
+}
+
+/*==================media quary===================*/
+@media (max-width: 991px) {
+	body {
+		width: 100%;
+	}
+	.menu {
+		width: 100%;
+		max-height: 0;
+		overflow: hidden;
+	}
+	.nav-link {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 0.8rem;
+		gap: 2rem;
+	}
+	.navbar label {
+		display: inline-flex;
+		align-items: center;
+		cursor: pointer;
+	}
+	#toggle:checked ~ .menu {
+		max-height: 100%;
+	}
+	.navbar {
+		padding: 0;
+	}
+	.logo {
+		margin: 0.6rem;
+	}
+
+	/*--------hero--------*/
+	.hero {
+		display: block;
+		width: 100%;
+	}
+	.hero-container {
+		width: 100%;
+	}
+	.social-icons {
+		display: none;
+	}
+	.hero-img-text {
+		width: 100%;
+	}
+	.hero-img {
+		width: 100%;
+	}
+	.product {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		width: 100%;
+	}
+}
