@@ -12,7 +12,7 @@
 	--clr-light: #ddd;
 	--clr-white: #fff;
 	--clr-black: #000;
-	--clr-bg: #d6cece;
+	--clr-bg: #fff;
 }
 
 body {
@@ -56,6 +56,9 @@ li {
 }
 
 /*==========navbar=========*/
+hearder {
+	position: relative;
+}
 .navbar {
 	display: flex;
 	flex-wrap: wrap;
@@ -63,9 +66,16 @@ li {
 	justify-content: space-between;
 	background-color: var(--clr-bg);
 	padding: 0.8rem 0;
+	margin-top: 4.5rem;
 }
 .navbar a {
 	color: var(--clr-black);
+}
+.brand {
+	position: absolute;
+	left: 50%;
+	margin-top: 1.8rem;
+	transform: translateX(-50%);
 }
 .logo {
 	margin-left: 2.9rem;
