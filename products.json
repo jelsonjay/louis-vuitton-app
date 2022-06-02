@@ -31,38 +31,6 @@
 				"price": 22.99,
 				"image": { "fields": { "file": { "url": "./images/product-1.png" } } }
 			}
-		},
-		{
-			"sys": { "id": "5" },
-			"fields": {
-				"title": "fridge",
-				"price": 88.99,
-				"image": { "fields": { "file": { "url": "./images/product-1.png" } } }
-			}
-		},
-		{
-			"sys": { "id": "6" },
-			"fields": {
-				"title": "dresser",
-				"price": 32.99,
-				"image": { "fields": { "file": { "url": "./images/product-1.png" } } }
-			}
-		},
-		{
-			"sys": { "id": "7" },
-			"fields": {
-				"title": "couch",
-				"price": 45.99,
-				"image": { "fields": { "file": { "url": "./images/product-1.png" } } }
-			}
-		},
-		{
-			"sys": { "id": "8" },
-			"fields": {
-				"title": "table",
-				"price": 33.99,
-				"image": { "fields": { "file": { "url": "./images/product-1.png" } } }
-			}
 		}
 	]
 }
